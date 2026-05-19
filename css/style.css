@@ -1823,3 +1823,39 @@ body.dark-mode .track-preview-container {
         text-transform: uppercase;
         font-weight: 600;
     }
+    /* =========================================
+   18. SKILL-BARS (TRIALSPORT GIMMICK)
+   ========================================= */
+.skill-wrapper {
+    margin-bottom: 15px;
+}
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.skill-bar-bg {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    height: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+body.dark-mode .skill-bar-bg {
+    background-color: #333;
+}
+/* Die farbige Füllung mit einer weichen Animation beim Laden */
+.skill-fill {
+    height: 100%;
+    border-radius: 10px;
+    /* Wir starten bei 0 Breite für eine coole Lade-Animation */
+    animation: fillBar 2s ease-out forwards; 
+}
+
+@keyframes fillBar {
+    from { width: 0; }
+}

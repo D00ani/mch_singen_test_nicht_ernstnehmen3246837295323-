@@ -11,13 +11,10 @@
     <script src="../js/exceljs.min.js"></script>
     <script src="../js/FileSaver.min.js"></script>
     
-    
     <script defer src="../js/klaro-config.js"></script>
     <script defer src="../js/klaro.js"></script>
     <script defer type="text/javascript" src="../js/main.js"></script>
     <script defer type="text/javascript" src="../js/live.js"></script>
-
-
 </head>
 <body>
 
@@ -35,6 +32,28 @@
     </header>
 
     <main>
+        <section class="info-card" style="margin-bottom: 25px; text-align: center;">
+            <h3><i class="fa-solid fa-map-location-dot" style="color: var(--primary-blue); margin-right: 10px;"></i> Aktueller Streckenplan</h3>
+            <p style="margin-bottom: 15px;">Der Streckenverlauf für das heutige Training / Rennen:</p>
+            <img src="../media/bilder/streckenplan.jpg" alt="Streckenplan" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid var(--primary-blue); box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </section>
+
+        <section class="info-card" style="margin-bottom: 35px;">
+            <h3><i class="fa-solid fa-video" style="color: var(--live-red); margin-right: 10px;"></i> Strecken-Preview (Onboard)</h3>
+            <p>Fahr den Kurs gedanklich schon mal ab:</p>
+
+            <div class="track-preview-container">
+                <div class="video-overlay">
+                    <span class="preview-badge"><i class="fa-solid fa-circle-dot"></i> Onboard Kamera</span>
+                </div>
+
+                <video class="track-video" autoplay loop muted playsinline controls>
+                    <source src="../media/videos/onboard-runde.mp4" type="video/mp4">
+                    Dein Browser unterstützt leider keine HTML5-Videos.
+                </video>
+            </div>
+        </section>
+
         <div class="live-header">
             <span class="live-dot"></span>
             <h2 style="margin:0; color: var(--live-red); font-size: 1.1rem;">SESSION LIVE</h2>
